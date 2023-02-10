@@ -8,14 +8,17 @@ son los siguientes:
 """
 
 
-label = ("NOMBRE", "TELEFONO")
+#Programa para ingresar la información de ciertos empleados (en este caso 2) e insertarlo en un diccionario.
+
+
+label = ("NOMBRE", "TELEFONO", "AÑO DE INGRESO A LA EMPRESA", "APELLIDO", "EDAD")
 info = {}
 dic = []
-i = 1
+i = 4
 while(i>=0):
     for data in label:
-        info.__setitem__(data, input(f"INGRESE EL {data}\n |"))
+        info.__setitem__(data, input(f"INGRESE EL {data}\n --> "))
     dic.append(info)
-    i-=1
+    i-=3
 
 print(dic)
